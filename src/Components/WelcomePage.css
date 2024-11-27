@@ -1,0 +1,129 @@
+
+/* Full-page container with gradient background */
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+    color: #000000;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero content centered */
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+    position: relative;
+}
+
+/* Logo styling with round shape, flicker-to-fade, and slide-in animation from the left */
+.animated-logo {
+    width: 220px;
+    margin-bottom: 20px;
+    animation: flickerFade 3s infinite, slideInFromLeft 1s ease-out;
+    border-radius: 50%; /* Makes the logo round */
+    box-shadow: 0 12px 30px #fff; /* Adds shadow for depth */
+}
+
+/* Main title styling with slide-in animation from the right */
+.welcome-title {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    animation: slideInFromRight 1.2s ease-out;
+}
+
+/* Subtitle with smaller font and slide-in animation from the left */
+.welcome-subtext {
+    font-size: 18px;
+    margin-bottom: 30px;
+    animation: slideInFromLeft 1.4s ease-out;
+}
+
+/* Button container with spacing and sliding animation for buttons */
+.button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    animation: slideInFromRight 1.6s ease-out;
+}
+
+/* Primary and secondary button styling */
+.button-primary, .button-secondary {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.button-primary {
+    background-color: #fff;
+    color: #007bff;
+}
+
+    .button-primary:hover {
+        transform: scale(1.1);
+        background-color: #007bff;
+        color: #fff;
+    }
+
+/* Secondary button styling */
+.button-secondary {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+    .button-secondary:hover {
+        transform: scale(1.1);
+        background-color: #fff;
+        color: #007bff;
+    }
+
+/* Flicker and fade animation for the logo */
+@keyframes flickerFade {
+    0%, 100% {
+        opacity: 0.8;
+    }
+
+    5%, 95% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+}
+
+/* Slide in from left animation */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Slide in from right animation */
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

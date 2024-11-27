@@ -1,0 +1,5 @@
+C:\Users\londa\source\repos\VCShuttleService\vcshuttleservice.client\obj\Debug\vcshuttleservice.client.esproj.CoreCompileInputs.cache
+C:\Users\teves\Desktop\VCShuttleService\VCShuttleService\vcshuttleservice.client\obj\Debug\vcshuttleservice.client.esproj.CoreCompileInputs.cache
+C:\Users\teves\Desktop\wil\VCShuttleService\VCShuttleService\vcshuttleservice.client\obj\Debug\vcshuttleservice.client.esproj.CoreCompileInputs.cache
+C:\Users\londa\Downloads\VCShuttleService\VCShuttleService\vcshuttleservice.client\obj\Debug\vcshuttleservice.client.esproj.CoreCompileInputs.cache
+C:\Users\londa\Downloads\VCShuttleService\VCShuttleService\VCShuttleService\VCShuttleService\vcshuttleservice.client\obj\Debug\vcshuttleservice.client.esproj.CoreCompileInputs.cache

@@ -1,0 +1,106 @@
+/* General animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Homepage container animation */
+.homepage-container {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Navbar animations */
+.navbar {
+    animation: slideIn 0.8s ease-in-out;
+}
+
+.navbar-logo {
+    animation: bounce 1.5s infinite;
+}
+
+.navbar-menu li {
+    animation: fadeIn 0.5s ease-in-out;
+    animation-delay: 0.3s;
+}
+
+/* Navbar link hover effect with pop animation */
+.navbar-link {
+    transition: color 0.3s, transform 0.2s;
+}
+
+.navbar-link:hover {
+    color: #ffdd57;
+    transform: scale(1.1);
+}
+
+/* Notification bell animation */
+.notification-bell {
+    animation: fadeIn 0.8s ease-in-out;
+    animation-delay: 0.5s;
+}
+
+.notification-bell:hover .notification-count {
+    animation: pop 0.4s ease-in-out;
+}
+
+/* Homepage content animations */
+.homepage-content h1 {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.homepage-content p {
+    animation: fadeIn 1.4s ease-in-out;
+}
+
+/* Footer animations */
+.footer-bar {
+    animation: slideIn 1s ease-in-out;
+}
+
+.contact-info, .shuttle-times {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Optional hover effect for footer elements */
+.contact-info:hover, .shuttle-times:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+}
