@@ -9,10 +9,10 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 
-# Copy the rest of the application files
+# Copy all the application files
 COPY . .
 
-# Build the application
+# Build the application in production mode
 RUN npm run build
 
 # Stage 2: Serve the app with nginx
